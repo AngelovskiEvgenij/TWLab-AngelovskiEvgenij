@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Inregistreaza-te</h1>
+            <form class="register-form" action="home.html" method="GET" enctype="multipart/form-data">
+
+                <div class="row">
+                    <label for="username">Nume de utilizator</label>
+                    <input type="text" name="username" placeholder="ex: evgenij.angelovski" required>
+                </div>
+
+                <div class="row two-col">
+                    <div>
+                        <label for="password">Parola</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirma parola</label>
+                        <input type="password" name="confirm_password" required>
+                    </div>
+                </div>
+            <div class="row">
+                <label for="dob">Data nasterii</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="row">
+                <label>Gen</label>
+                <div class="checkbox-grid">
+                    <div>
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male" style="display:inline;">Masculin</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female" style="display:inline;">Feminin</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="country">Tara</label>
+                <select name="country" id="country">
+                    <option value="ro">Romania</option>
+                    <option value="rs">Serbia</option>
+                    <option value="hu">Ungaria</option>
+                    <option value="mk">Macedonia</option>
+                    <option value="other">Alta</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Hobby-uri</label>
+                <div class="checkbox-grid">
+                    <div>
+                        <input type="checkbox" name="hobbies" value="coding" id="coding">
+                        <label for="coding" style="display:inline;">Programare</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="reading" id="reading">
+                        <label for="reading" style="display:inline;">Citit</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="other" id="other">
+                        <label for="other" style="display:inline;">Alte</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="profile_pic">Poza de profil</label>
+                <input type="file" name="profile_pic" id="profile_pic">
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">Inregistrare</button>
+                <button type="reset" class="btn ghost">Anulare</button>
+            </div>
+
+            <p class="login-link">
+                Ai deja cont? <a href="login.html">Mergi la login!</a>
+            </p>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
