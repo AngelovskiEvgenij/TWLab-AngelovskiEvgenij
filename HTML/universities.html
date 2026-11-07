@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universități din România</title>
+    <link rel="stylesheet" href="../CSS/home_style.css">
+    <link rel="stylesheet" href="../CSS/universities_style.css">
 </head>
 <body>
-$END$
+
+<header>
+    <div class="container">
+        <h1>Comunitatea de TW 2026</h1>
+        <nav>
+            <a href="home.html">Acasa</a>
+            <a href="universities.html">Universitati</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="table-section">
+        <h2>Universități din România</h2>
+
+        <div class="controls-row">
+            <label for="q"><strong>Filtru:</strong></label>
+            <input type="text" id="q" placeholder="Caută după nume...">
+            <button id="exportBtn" class="btn">Export CSV</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Țara</th>
+                    <th>Site</th>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; Comunitatea de TW 2026</p>
+        <p>
+            <a href="https://www.uvt.ro">Universitatea de Vest din Timisoara</a> |
+            <a href="https://info.uvt.ro">Facultatea de Informatica</a>
+        </p>
+    </div>
+</footer>
+
+<script src="../JS/universities_js.js"></script>
 </body>
 </html>
