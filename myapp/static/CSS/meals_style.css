@@ -1,0 +1,91 @@
+.meals-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.meals-section h1 {
+    color: #3471B8;
+    margin-bottom: 20px;
+}
+
+/* Search area */
+#searchForm {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+#queryInput {
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    flex: 1;
+    font-size: 16px;
+}
+
+#queryInput:focus {
+    outline: none;
+    border-color: #3471B8;
+}
+
+#searchBtn {
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+#searchBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Status element */
+#status {
+    min-height: 1.5rem;
+    margin: 0.5rem 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Card grid */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card .meal-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #3471B8;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}

@@ -20,4 +20,7 @@ def chatbot(request):
 
 def galerie(request):
     return render(request, "HTML/galerie.html")
+
+def meals(request):
+    return render(request, "HTML/meals.html")
 # Create your views here.

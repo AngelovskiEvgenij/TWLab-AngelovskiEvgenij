@@ -1,8 +1,10 @@
 const images: string[] = [
-    "../MEDIA/images.jpeg",
-    "../MEDIA/images1.jpeg",
-    "../MEDIA/UVT.jpg",
-    "../MEDIA/uvt-2.jpg"
+    "/static/MEDIA/images.jpeg",
+    "/static/MEDIA/images1.jpeg",
+    "/static/MEDIA/UVT.jpg",
+    "/static/MEDIA/uvt-2.jpg",
+    "/static/MEDIA/INFO.png",
+    "/static/MEDIA/imagine.png"
 ];
 
 const mainImage = document.getElementById("carousel-image") as HTMLImageElement;
