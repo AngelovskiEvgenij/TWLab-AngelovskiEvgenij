@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Foto - Lab 6</title>
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/galerie.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Comunitatea de TW 2026</h1>
+        <nav>
+            <a href="{% url 'home' %}">Acasa</a>
+            <a href="{% url 'universities' %}">Universitati</a>
+            <a href="{% url 'galerie' %}">Galerie</a>
+            <a href="{% url 'chatbot' %}">Chatbot</a>
+            <a href="{% url 'login' %}">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="carousel-container">
+        <div class="carousel-view">
+            <img id="carousel-image" src="{% static 'MEDIA/images.jpeg' %}" alt="Carusel">
+        </div>
+    </div>
+</main>
+
+<script src="{% static 'TS/galerie.js' %}"></script>
+<script src="{% static 'TS/cursor.js' %}"></script>
+</body>
+</html>

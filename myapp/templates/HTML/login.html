@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/login_style.css' %}">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-image">
+        <img src="{% static 'MEDIA/INFO.png' %}" alt="Imagine login">
+    </div>
+    <div class="separator"></div>
+    <form class="login-form" action="{% url 'home' %}" method="GET">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Parola" required>
+        <button type="submit">Conectare</button>
+        <p class="register-text">
+            Nu ai cont? <a href="{% url 'register' %}">Inregistreaza-te</a>
+        </p>
+    </form>
+
+    <script src="{% static 'JS/login_js.js' %}"></script>
+</div>
+</body>
+</html>

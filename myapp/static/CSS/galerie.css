@@ -1,0 +1,21 @@
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.carousel-view {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border: 4px solid #3471B8;
+    border-radius: 15px;
+}
+
+.carousel-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
